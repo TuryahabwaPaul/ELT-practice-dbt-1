@@ -71,7 +71,7 @@ services:
       - POSTGRES_DB=airflow
 
   init-airflow:
-    image: apache/airflow:latest
+    image: apache/airflow:2.8.1
     depends_on:
       - postgres
     networks:
